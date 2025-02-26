@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Hybrid A*-guided MPPI for Robust Navigation in Rough Terrains">
+  <meta property="og:title" content="Hybrid A*-guided MPPI"/>
+  <meta property="og:description" content="A Hybrid A*-guided MPPI framework designed for robust trajectory optimization in rough terrains."/>
+  <meta property="og:url" content="https://hybridastar-guided-mppi.github.io/"/>
+  <meta property="og:image" content="static/images/hybrid-astar-mppi-banner.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:title" content="Hybrid A*-guided MPPI"/>
+  <meta name="twitter:description" content="Enhancing MPPI-based trajectory optimization with Hybrid A* and traversability estimation."/>
+  <meta name="twitter:image" content="static/images/hybrid-astar-mppi-banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="MPPI, A-star, Hybrid A-star, Path Planning, Robotics, Motion Planning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hybrid A*-guided MPPI</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Hybrid A*-guided Model Predictive Path Integral Control for Robust Navigation in Rough Terrains</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Joonyeol Yang<sup>1†</sup>, Minhyeong Kang<sup>1†</sup>, Seulchan Lee<sup>1</sup>, and Sanghyun Kim<sup>1*</sup></span>
+              <div class="is-size-6 publication-affiliations">
+                <span>1. Department of Mechanical Engineering, Kyung Hee University, Republic of Korea</span>
+              </div>
+              <p class="is-size-6">† These authors contributed equally to this work.<br>
+              * Correspondence: <a href="mailto:kim87@khu.ac.kr">kim87@khu.ac.kr</a></p>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="static/pdfs/hybrid-astar-mppi-paper.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://github.com/er1c-cartman/Hybrid-Astar-guided-MPPI" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=DRFQBkR59KA" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-youtube"></i></span>
+                  <span>YouTube</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Navigating rough terrains requires a robust path planning algorithm that accounts for the physical properties of the environment to maintain stability and ensure safety. 
+              This article proposes the Hybrid A*-guided Model Predictive Path Integral (MPPI) algorithm augmented with traversability estimation to address the challenges of path planning on uneven terrains. 
+              The traversability estimation process quantifies surface characteristics, such as slope and roughness, to identify traversable regions. 
+              Using this information, the Hybrid A* algorithm computes paths that minimize surface irregularities and prioritize regions with lower gradients, thereby enhancing stability and reducing dynamic disturbances. 
+              These computed paths are then used to define the mean control input for the MPPI algorithm, which performs localized optimization while adhering to the terrain-aware trajectory. 
+              By integrating terrain-aware guidance through the Hybrid A* algorithm with the MPPI, the proposed methodology automates the selection of the appropriate mean control input and enhances control performance by explicitly incorporating terrain properties into the planning process. 
+              Experimental results demonstrate the ability of the algorithm to navigate complex terrains with reduced roll and pitch motions, contributing to improved stability and performance</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Presentation -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Video Presentation</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="publication-video">
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/DRFQBkR59KA" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+              Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
